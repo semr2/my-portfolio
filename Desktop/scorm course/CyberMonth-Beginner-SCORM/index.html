@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cyber Month Ethiopia — Beginner Cybersecurity Awareness</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="flag-bar" aria-hidden="true">
+    <span class="flag-bar__green"></span>
+    <span class="flag-bar__yellow"></span>
+    <span class="flag-bar__red"></span>
+  </div>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <p class="site-header__eyebrow">Cyber Month Ethiopia</p>
+      <h1 class="site-header__title">Beginner Cybersecurity Awareness</h1>
+      <p class="site-header__tagline">Build the knowledge and habits needed to stay safer online.</p>
+      <p id="learner-greeting" class="site-header__learner" hidden></p>
+    </div>
+  </header>
+
+  <div id="mode-banner" class="mode-banner" role="status" aria-live="polite">
+    Checking course environment…
+  </div>
+
+  <main id="main">
+    <section id="home-view" class="home-view" aria-labelledby="welcome-heading">
+      <section class="panel welcome" aria-labelledby="welcome-heading">
+        <h2 id="welcome-heading">Welcome</h2>
+        <p>
+          This course teaches practical cybersecurity awareness for everyday digital activities.
+          You will learn how to protect accounts, recognise common scams, use devices more safely,
+          and make careful choices about personal information — at work, at school, and at home.
+        </p>
+      </section>
+
+      <section class="panel objectives" aria-labelledby="objectives-heading">
+        <h2 id="objectives-heading">Learning objectives</h2>
+        <p>By the end of this course, you should understand:</p>
+        <ul>
+          <li>Basic cybersecurity concepts</li>
+          <li>Password and account protection</li>
+          <li>Phishing and scam recognition</li>
+          <li>Social engineering</li>
+          <li>Device and internet security</li>
+          <li>Basic data protection</li>
+          <li>Safe cybersecurity decision-making</li>
+        </ul>
+      </section>
+
+      <section class="panel progress-panel" aria-labelledby="progress-heading">
+        <h2 id="progress-heading">Your progress</h2>
+        <p id="progress-label" class="progress-label">Progress: 0 of 7 completed</p>
+        <div
+          id="progress-bar"
+          class="progress-track"
+          role="progressbar"
+          aria-labelledby="progress-label"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          aria-valuenow="0"
+        >
+          <div id="progress-fill" class="progress-track__fill"></div>
+        </div>
+        <p id="progress-percent" class="progress-percent">0%</p>
+      </section>
+
+      <section class="panel modules-panel" aria-labelledby="modules-heading">
+        <h2 id="modules-heading">Course modules</h2>
+        <div id="module-grid" class="module-grid">
+          <article class="module-card" data-module-id="module01">
+            <div class="module-card__meta">
+              <p class="module-card__number">Module 01</p>
+              <span class="status status--not-started" data-status>Not Started</span>
+            </div>
+            <h3 class="module-card__title">Introduction to Cybersecurity</h3>
+            <p class="module-card__desc">Core ideas, why security matters, the CIA triad, and common threats.</p>
+            <button type="button" class="btn btn--primary js-open-module" data-module-id="module01">Open</button>
+          </article>
+
+          <article class="module-card" data-module-id="module02">
+            <div class="module-card__meta">
+              <p class="module-card__number">Module 02</p>
+              <span class="status status--not-started" data-status>Not Started</span>
+            </div>
+            <h3 class="module-card__title">Password &amp; Account Security</h3>
+            <p class="module-card__desc">Strong passwords, multi-factor authentication, reuse risks, and account protection.</p>
+            <button type="button" class="btn btn--primary js-open-module" data-module-id="module02">Open</button>
+          </article>
+
+          <article class="module-card" data-module-id="module03">
+            <div class="module-card__meta">
+              <p class="module-card__number">Module 03</p>
+              <span class="status status--not-started" data-status>Not Started</span>
+            </div>
+            <h3 class="module-card__title">Phishing</h3>
+            <p class="module-card__desc">Email and SMS phishing, fake websites, and warning signs.</p>
+            <button type="button" class="btn btn--primary js-open-module" data-module-id="module03">Open</button>
+          </article>
+
+          <article class="module-card" data-module-id="module04">
+            <div class="module-card__meta">
+              <p class="module-card__number">Module 04</p>
+              <span class="status status--not-started" data-status>Not Started</span>
+            </div>
+            <h3 class="module-card__title">Social Engineering</h3>
+            <p class="module-card__desc">Impersonation, urgency, manipulation, and how to verify requests.</p>
+            <button type="button" class="btn btn--primary js-open-module" data-module-id="module04">Open</button>
+          </article>
+
+          <article class="module-card" data-module-id="module05">
+            <div class="module-card__meta">
+              <p class="module-card__number">Module 05</p>
+              <span class="status status--not-started" data-status>Not Started</span>
+            </div>
+            <h3 class="module-card__title">Device &amp; Internet Security</h3>
+            <p class="module-card__desc">Updates, antivirus, safer browsing, and public Wi-Fi.</p>
+            <button type="button" class="btn btn--primary js-open-module" data-module-id="module05">Open</button>
+          </article>
+
+          <article class="module-card" data-module-id="module06">
+            <div class="module-card__meta">
+              <p class="module-card__number">Module 06</p>
+              <span class="status status--not-started" data-status>Not Started</span>
+            </div>
+            <h3 class="module-card__title">Data Protection</h3>
+            <p class="module-card__desc">Sensitive information, sharing, privacy, and secure storage.</p>
+            <button type="button" class="btn btn--primary js-open-module" data-module-id="module06">Open</button>
+          </article>
+
+          <article class="module-card module-card--assessment" data-module-id="assessment">
+            <div class="module-card__meta">
+              <p class="module-card__number">Module 07</p>
+              <span class="status status--not-started" data-status>Not Started</span>
+            </div>
+            <h3 class="module-card__title">Final Assessment</h3>
+            <p class="module-card__desc">Check your understanding of the beginner awareness topics.</p>
+            <button type="button" class="btn btn--primary js-open-module" data-module-id="assessment">Open</button>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section id="module-view" class="module-view" hidden aria-labelledby="module-view-heading">
+      <h2 id="module-view-heading">Module</h2>
+      <p class="placeholder-note">
+        Lesson content for this module will be added in a later step. This screen is a navigation placeholder.
+      </p>
+      <iframe id="module-frame" class="module-frame" title="Module content" src="about:blank"></iframe>
+    </section>
+  </main>
+
+  <nav class="course-nav" aria-label="Course navigation">
+    <button type="button" id="btn-overview" class="btn btn--secondary">Course overview</button>
+    <button type="button" id="btn-prev" class="btn btn--secondary">Previous</button>
+    <button type="button" id="btn-continue" class="btn btn--primary">Continue Learning</button>
+    <button type="button" id="btn-next" class="btn btn--primary">Next</button>
+  </nav>
+
+  <footer class="site-footer">
+    <p>Cyber Month Ethiopia — Beginner Cybersecurity Awareness</p>
+  </footer>
+
+  <script src="js/scorm.js"></script>
+  <script src="js/course.js"></script>
+</body>
+</html>

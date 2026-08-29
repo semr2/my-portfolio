@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 01 — Introduction to Cybersecurity</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <main class="module-lesson">
+    <header class="lesson-header">
+      <p class="eyebrow">Cyber Month Ethiopia</p>
+      <h1>01 — Introduction to Cybersecurity</h1>
+      <p class="lesson-lead">
+        Cybersecurity is about protecting devices, accounts, networks, information, and digital activities from unauthorized access, misuse, disruption, or damage.
+      </p>
+    </header>
+
+    <nav class="lesson-nav" aria-label="Module section navigation">
+      <a href="#welcome">Welcome</a>
+      <a href="#what-is">What is Cybersecurity?</a>
+      <a href="#why-it-matters">Why It Matters</a>
+      <a href="#cia-triad">CIA Triad</a>
+      <a href="#threats">Threats</a>
+      <a href="#spot-threat">Spot the Threat</a>
+      <a href="#takeaways">Takeaways</a>
+      <a href="#knowledge-check">Knowledge Check</a>
+    </nav>
+
+    <section id="welcome" class="lesson-panel" aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading">Welcome</h2>
+      <p>
+        In everyday life, we use phones, computers, email, messaging, banking apps, and work or school accounts. Cybersecurity helps us protect those tools and the information we rely on every day.
+      </p>
+      <p>
+        Good cybersecurity habits help prevent unauthorized access, scams, data loss, and disruption. It is not only a technical topic. It is a practical skill for everyone.
+      </p>
+    </section>
+
+    <section id="what-is" class="lesson-panel" aria-labelledby="what-is-heading">
+      <h2 id="what-is-heading">What is Cybersecurity?</h2>
+      <p>
+        Cybersecurity means protecting digital systems, data, and activities from harm. It includes keeping devices, accounts, and information safe from unauthorized access, mistakes, and malicious actions.
+      </p>
+      <div class="info-grid">
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">🛡️</div>
+          <h3>What we protect</h3>
+          <p>We protect phones, computers, networks, passwords, messages, documents, photos, online accounts, and the services people rely on each day.</p>
+        </article>
+
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">👥</div>
+          <h3>Who can be affected</h3>
+          <p>Anyone can be affected: students, workers, families, business owners, and organizations. Cybersecurity is relevant for everyday life.</p>
+        </article>
+
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">💡</div>
+          <h3>Why it is not only an IT issue</h3>
+          <p>People make security decisions every day — such as choosing a password, checking a link, sharing information, or avoiding suspicious messages. These decisions matter.</p>
+        </article>
+      </div>
+      <p>
+        Everyday examples include protecting your email, safeguarding a social media account, being careful with online banking, and using safer habits at work or school.
+      </p>
+    </section>
+
+    <section id="why-it-matters" class="lesson-panel" aria-labelledby="why-heading">
+      <h2 id="why-heading">Why Cybersecurity Matters</h2>
+      <p>
+        Poor cybersecurity habits can lead to serious problems for both individuals and organizations. When systems and accounts are not protected, the consequences may be stressful and expensive.
+      </p>
+      <ul class="warning-list">
+        <li><strong>Stolen accounts:</strong> attackers may access email, social media, or banking accounts.</li>
+        <li><strong>Identity misuse:</strong> personal information can be used without permission.</li>
+        <li><strong>Financial loss:</strong> money may be stolen through scams or fake transactions.</li>
+        <li><strong>Privacy loss:</strong> private photos, messages, and documents may be exposed.</li>
+        <li><strong>Data loss:</strong> important files may be deleted, hidden, or locked.</li>
+        <li><strong>Service disruption:</strong> essential work, education, or communication may be interrupted.</li>
+        <li><strong>Damage to organizations:</strong> businesses and institutions can lose trust, time, and resources.</li>
+      </ul>
+    </section>
+
+    <section id="cia-triad" class="lesson-panel" aria-labelledby="cia-heading">
+      <h2 id="cia-heading">CIA Triad</h2>
+      <p>
+        The CIA Triad is a simple model used to explain the main goals of cybersecurity. It helps us think about protecting information and systems.
+      </p>
+
+      <div class="cia-grid">
+        <article class="triad-card triad-card--confidentiality">
+          <span class="card-label">Confidentiality</span>
+          <h3>Confidentiality</h3>
+          <p><strong>Definition:</strong> Only authorized people should access information.</p>
+          <p><strong>Everyday example:</strong> A private password or personal document should not be exposed to unauthorized people.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="triad-confidentiality-detail">
+            Show why it matters
+          </button>
+          <div id="triad-confidentiality-detail" class="triad-detail" hidden>
+            <p><strong>Why it matters:</strong> Protecting confidentiality helps prevent spying, unauthorized access, and information leaks.</p>
+          </div>
+        </article>
+
+        <article class="triad-card triad-card--integrity">
+          <span class="card-label">Integrity</span>
+          <h3>Integrity</h3>
+          <p><strong>Definition:</strong> Information should remain accurate, complete, and trustworthy.</p>
+          <p><strong>Everyday example:</strong> An attacker should not secretly change important information, such as account details or messages.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="triad-integrity-detail">
+            Show why it matters
+          </button>
+          <div id="triad-integrity-detail" class="triad-detail" hidden>
+            <p><strong>Why it matters:</strong> We need to know that the information we rely on has not been changed or tampered with.</p>
+          </div>
+        </article>
+
+        <article class="triad-card triad-card--availability">
+          <span class="card-label">Availability</span>
+          <h3>Availability</h3>
+          <p><strong>Definition:</strong> Systems and information should be available when authorized people need them.</p>
+          <p><strong>Everyday example:</strong> A service should remain accessible when users need it, such as a school portal, email, or a banking app.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="triad-availability-detail">
+            Show why it matters
+          </button>
+          <div id="triad-availability-detail" class="triad-detail" hidden>
+            <p><strong>Why it matters:</strong> If systems are unavailable, people cannot complete essential tasks or access important information.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="threats" class="lesson-panel" aria-labelledby="threats-heading">
+      <h2 id="threats-heading">Common Cybersecurity Threats</h2>
+      <p>
+        Awareness is the first step toward protection. These are common examples of risks people may face online and in digital communication.
+      </p>
+
+      <div class="threat-grid">
+        <article class="threat-card">
+          <h3>Phishing</h3>
+          <p><strong>What it is:</strong> A fake message or website that looks trustworthy.</p>
+          <p><strong>What it can cause:</strong> Stolen login information or fake requests for personal data.</p>
+          <p><strong>Warning sign:</strong> It creates urgency or asks for immediate action.</p>
+          <p><strong>Safe action:</strong> Verify the sender or website before clicking or entering information.</p>
+        </article>
+
+        <article class="threat-card">
+          <h3>Malware</h3>
+          <p><strong>What it is:</strong> Harmful software designed to harm devices or steal information.</p>
+          <p><strong>What it can cause:</strong> Slower devices, stolen files, or hidden access.</p>
+          <p><strong>Warning sign:</strong> Strange pop-ups, unexpected downloads, or unusual performance.</p>
+          <p><strong>Safe action:</strong> Only install software from trusted sources and keep systems updated.</p>
+        </article>
+
+        <article class="threat-card">
+          <h3>Weak or Reused Passwords</h3>
+          <p><strong>What it is:</strong> Passwords that are easy to guess or used across many accounts.</p>
+          <p><strong>What it can cause:</strong> Account takeover and loss of access.</p>
+          <p><strong>Warning sign:</strong> Known words, short passwords, or the same password everywhere.</p>
+          <p><strong>Safe action:</strong> Use unique, strong passwords and a trusted password manager if available.</p>
+        </article>
+
+        <article class="threat-card">
+          <h3>Social Engineering</h3>
+          <p><strong>What it is:</strong> Manipulation designed to trick people into sharing information or taking action.</p>
+          <p><strong>What it can cause:</strong> False trust, unsafe decisions, and information disclosure.</p>
+          <p><strong>Warning sign:</strong> Pressure, fear, or requests to act quickly.</p>
+          <p><strong>Safe action:</strong> Pause, verify the request, and confirm through a trusted channel.</p>
+        </article>
+
+        <article class="threat-card">
+          <h3>Unsafe Websites</h3>
+          <p><strong>What it is:</strong> Websites that mimic trusted services or ask for unsafe actions.</p>
+          <p><strong>What it can cause:</strong> Identity theft, fake login attempts, or download of harmful content.</p>
+          <p><strong>Warning sign:</strong> Spelling mistakes, odd URLs, or missing security indicators.</p>
+          <p><strong>Safe action:</strong> Check the address carefully and do not enter personal data on unknown sites.</p>
+        </article>
+
+        <article class="threat-card">
+          <h3>Account Takeover</h3>
+          <p><strong>What it is:</strong> Someone gains access to a person’s account without permission.</p>
+          <p><strong>What it can cause:</strong> Abuse of messages, financial loss, or privacy breaches.</p>
+          <p><strong>Warning sign:</strong> Unexpected password reset messages or unrecognized activity.</p>
+          <p><strong>Safe action:</strong> Change passwords quickly and enable stronger sign-in protections.</p>
+        </article>
+
+        <article class="threat-card">
+          <h3>Data Exposure</h3>
+          <p><strong>What it is:</strong> Sensitive information is shared or exposed without proper protection.</p>
+          <p><strong>What it can cause:</strong> Privacy concerns, misuse of personal details, and loss of trust.</p>
+          <p><strong>Warning sign:</strong> Oversharing on public platforms or sending personal information through insecure channels.</p>
+          <p><strong>Safe action:</strong> Share only what is necessary and use protected communication methods.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="spot-threat" class="lesson-panel" aria-labelledby="spot-threat-heading">
+      <h2 id="spot-threat-heading">Spot the Threat</h2>
+      <div class="scenario" aria-live="polite">
+        <h3>Scenario</h3>
+        <p class="scenario-message">URGENT! Your account will be closed today. Click this link immediately to verify your account.</p>
+        <p>What warning signs do you notice?</p>
+
+        <div class="choice-list" role="group" aria-label="Choose warning signs in the message">
+          <button type="button" class="choice-btn" data-correct="true">Urgency and pressure</button>
+          <button type="button" class="choice-btn" data-correct="true">Unexpected message</button>
+          <button type="button" class="choice-btn" data-correct="true">Suspicious link</button>
+          <button type="button" class="choice-btn" data-correct="true">Request for personal information</button>
+          <button type="button" class="choice-btn" data-correct="false">A message that appears to come from a trusted service you already use</button>
+        </div>
+
+        <div id="spot-feedback" class="feedback-box" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <section id="takeaways" class="lesson-panel" aria-labelledby="takeaways-heading">
+      <h2 id="takeaways-heading">Key Takeaways</h2>
+      <ul class="takeaways-list">
+        <li>Cybersecurity protects people, information, devices, and services.</li>
+        <li>Everyone has a role in cybersecurity.</li>
+        <li>Confidentiality protects information from unauthorized access.</li>
+        <li>Integrity protects information from unauthorized changes.</li>
+        <li>Availability keeps systems and information usable.</li>
+      </ul>
+    </section>
+
+    <section id="knowledge-check" class="lesson-panel" aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading">Module Knowledge Check</h2>
+      <p>Choose the best answer for each question. You need at least 80% to pass this module.</p>
+
+      <div class="quiz-question" data-question="1" data-lock="false">
+        <h3>1. Which statement best describes cybersecurity?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="true">It is the practice of protecting devices, accounts, information, and digital activities from harm.</button>
+          <button type="button" class="answer-btn" data-correct="false">It is only about fixing broken computers.</button>
+          <button type="button" class="answer-btn" data-correct="false">It is only used by professional hackers.</button>
+          <button type="button" class="answer-btn" data-correct="false">It means avoiding all online activity.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="2" data-lock="false">
+        <h3>2. Why does cybersecurity matter in everyday life?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">Because only large companies need to care.</button>
+          <button type="button" class="answer-btn" data-correct="true">Because people use email, banking, social media, and work accounts that can be targeted.</button>
+          <button type="button" class="answer-btn" data-correct="false">Because it makes websites slower.</button>
+          <button type="button" class="answer-btn" data-correct="false">Because it removes the need to think about privacy.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="3" data-lock="false">
+        <h3>3. What does confidentiality protect?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">Only the speed of systems.</button>
+          <button type="button" class="answer-btn" data-correct="true">Information from unauthorized access.</button>
+          <button type="button" class="answer-btn" data-correct="false">Only public websites.</button>
+          <button type="button" class="answer-btn" data-correct="false">Only passwords that are already known.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="4" data-lock="false">
+        <h3>4. What does integrity mean in cybersecurity?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">That information should be deleted often.</button>
+          <button type="button" class="answer-btn" data-correct="true">That information remains accurate, trustworthy, and unchanged by unauthorized people.</button>
+          <button type="button" class="answer-btn" data-correct="false">That systems are always online.</button>
+          <button type="button" class="answer-btn" data-correct="false">That everyone can see all information.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="5" data-lock="false">
+        <h3>5. Which option best reflects good cybersecurity awareness?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">Ignore warnings and click unknown links quickly.</button>
+          <button type="button" class="answer-btn" data-correct="true">Pause, verify unexpected requests, and protect passwords and personal information.</button>
+          <button type="button" class="answer-btn" data-correct="false">Share your password with family to be helpful.</button>
+          <button type="button" class="answer-btn" data-correct="false">Use the same password everywhere because it is easier to remember.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div id="quiz-summary" class="quiz-summary" hidden></div>
+      <div class="quiz-actions">
+        <button id="retry-quiz" type="button" class="btn btn--secondary" hidden>Retry knowledge check</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      'use strict';
+
+      function getScorm() {
+        if (window.parent && window.parent.SCORM) {
+          return window.parent.SCORM;
+        }
+        return window.SCORM || null;
+      }
+
+      function getModuleCompleteHook() {
+        if (window.parent && window.parent.Course && typeof window.parent.Course.markModuleComplete === 'function') {
+          return window.parent.Course.markModuleComplete;
+        }
+        return null;
+      }
+
+      var questionCards = Array.prototype.slice.call(document.querySelectorAll('.quiz-question'));
+      var summaryBox = document.getElementById('quiz-summary');
+      var retryButton = document.getElementById('retry-quiz');
+      var totalQuestions = questionCards.length;
+      var answeredCount = 0;
+      var correctCount = 0;
+
+      function resetQuestion(card) {
+        var buttons = card.querySelectorAll('.answer-btn');
+        var feedback = card.querySelector('.quiz-feedback');
+
+        card.setAttribute('data-lock', 'false');
+        buttons.forEach(function (button) {
+          button.classList.remove('is-correct', 'is-wrong');
+          button.disabled = false;
+        });
+
+        if (feedback) {
+          feedback.classList.remove('is-visible', 'is-correct', 'is-wrong');
+          feedback.textContent = '';
+        }
+      }
+
+      function handleSpotThreat() {
+        var feedback = document.getElementById('spot-feedback');
+        var buttons = Array.prototype.slice.call(document.querySelectorAll('.choice-btn'));
+
+        buttons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            var isCorrect = button.getAttribute('data-correct') === 'true';
+            var selectedLabel = button.textContent.trim();
+
+            buttons.forEach(function (item) {
+              item.disabled = true;
+              item.classList.remove('is-correct', 'is-wrong');
+              if (item.getAttribute('data-correct') === 'true') {
+                item.classList.add('is-correct');
+              }
+            });
+
+            if (isCorrect) {
+              feedback.hidden = false;
+              feedback.textContent = 'Correct. ' + selectedLabel + ' is a warning sign because it suggests urgency, pressure, or a risky request.';
+              feedback.classList.add('is-visible');
+            } else {
+              feedback.hidden = false;
+              feedback.textContent = 'This one is not a warning sign by itself. A trusted message should not create fear or rush you into acting without checking the source.';
+            }
+          });
+        });
+      }
+
+      function bindTriadInteractions() {
+        var toggles = Array.prototype.slice.call(document.querySelectorAll('.triad-toggle'));
+
+        toggles.forEach(function (toggle) {
+          toggle.addEventListener('click', function () {
+            var isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            var panel = document.getElementById(toggle.getAttribute('aria-controls'));
+
+            toggle.setAttribute('aria-expanded', String(!isExpanded));
+            toggle.textContent = isExpanded ? 'Show why it matters' : 'Hide explanation';
+
+            if (panel) {
+              panel.hidden = isExpanded;
+            }
+          });
+        });
+      }
+
+      function finishQuiz() {
+        var score = Math.round((correctCount / totalQuestions) * 100);
+        summaryBox.hidden = false;
+        summaryBox.className = 'quiz-summary';
+
+        if (score >= 80) {
+          summaryBox.classList.add('quiz-summary--pass');
+          summaryBox.innerHTML = '<h3>Excellent work!</h3><p>You scored ' + score + '%.</p><p>You have passed Module 01 and completed the knowledge check.</p>';
+
+          retryButton.hidden = true;
+
+          var moduleComplete = getModuleCompleteHook();
+          if (typeof moduleComplete === 'function') {
+            moduleComplete.call(window.parent.Course, 'module01');
+          }
+        } else {
+          summaryBox.classList.add('quiz-summary--fail');
+          summaryBox.innerHTML = '<h3>Nice effort.</h3><p>You scored ' + score + '%.</p><p>You need at least 80% to pass Module 01. Please try again.</p>';
+          retryButton.hidden = false;
+        }
+      }
+
+      function evaluateQuestion(card) {
+        if (card.getAttribute('data-lock') === 'true') {
+          return;
+        }
+
+        var buttons = card.querySelectorAll('.answer-btn');
+        var feedback = card.querySelector('.quiz-feedback');
+
+        buttons.forEach(function (button) {
+          if (button.dataset.bound === 'true') {
+            return;
+          }
+
+          button.dataset.bound = 'true';
+          button.addEventListener('click', function () {
+            var isCorrect;
+
+            if (card.getAttribute('data-lock') === 'true') {
+              return;
+            }
+
+            isCorrect = button.getAttribute('data-correct') === 'true';
+
+            buttons.forEach(function (item) {
+              item.disabled = true;
+              item.classList.remove('is-correct', 'is-wrong');
+              if (item.getAttribute('data-correct') === 'true') {
+                item.classList.add('is-correct');
+              }
+            });
+
+            card.setAttribute('data-lock', 'true');
+
+            if (isCorrect) {
+              correctCount += 1;
+              feedback.classList.add('is-correct', 'is-visible');
+              feedback.textContent = 'Correct. ' + button.textContent.trim() + ' is the best answer.';
+            } else {
+              feedback.classList.add('is-wrong', 'is-visible');
+              feedback.textContent = 'Not quite. The best answer is the safe, accurate option that matches the lesson.';
+            }
+
+            answeredCount += 1;
+
+            if (answeredCount === totalQuestions) {
+              finishQuiz();
+            }
+          });
+        });
+      }
+
+      function resetQuiz() {
+        answeredCount = 0;
+        correctCount = 0;
+        summaryBox.hidden = true;
+        summaryBox.textContent = '';
+        retryButton.hidden = true;
+
+        questionCards.forEach(function (card) {
+          resetQuestion(card);
+        });
+      }
+
+      questionCards.forEach(function (card) {
+        evaluateQuestion(card);
+      });
+
+      handleSpotThreat();
+      bindTriadInteractions();
+      retryButton.addEventListener('click', resetQuiz);
+    }());
+  </script>
+</body>
+</html>

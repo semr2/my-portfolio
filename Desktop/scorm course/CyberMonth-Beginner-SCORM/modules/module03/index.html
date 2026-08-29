@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 03 — Phishing</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <main class="module-lesson">
+    <header class="lesson-header">
+      <p class="eyebrow">Cyber Month Ethiopia</p>
+      <h1>03 — Phishing</h1>
+      <p class="lesson-lead">
+        Phishing is a common online scam where attackers try to trick people into clicking dangerous links, opening suspicious attachments, sharing information, or taking unsafe actions.
+      </p>
+    </header>
+
+    <nav class="lesson-nav" aria-label="Module section navigation">
+      <a href="#welcome">Welcome</a>
+      <a href="#what-is-phishing">What Is Phishing?</a>
+      <a href="#email-phishing">Email Phishing</a>
+      <a href="#sms-phishing">SMS Phishing</a>
+      <a href="#fake-websites">Fake Websites</a>
+      <a href="#warning-signs">Warning Signs</a>
+      <a href="#spot-the-phish">Spot the Phish</a>
+      <a href="#what-to-do">What to Do</a>
+      <a href="#takeaways">Takeaways</a>
+      <a href="#knowledge-check">Knowledge Check</a>
+    </nav>
+
+    <section id="welcome" class="lesson-panel" aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading">Welcome</h2>
+      <p>
+        Phishing attacks are designed to look familiar, urgent, or important. They often pretend to be from a trusted service, a company, a bank, a school, or a delivery service. The goal is to trick a person into acting quickly without thinking.
+      </p>
+      <p>
+        In phishing, attackers may try to get you to click a malicious link, open a dangerous attachment, reply with private information, or provide a security code. A safe learner does not click first and does not share sensitive information in a suspicious message.
+      </p>
+      <div class="scenario">
+        <h3>Learning goal</h3>
+        <p class="scenario-message">By the end of this module, you will be able to recognize common phishing attempts, identify warning signs, and make safer decisions before clicking, replying, or sharing information.</p>
+      </div>
+    </section>
+
+    <section id="what-is-phishing" class="lesson-panel" aria-labelledby="phishing-heading">
+      <h2 id="phishing-heading">What Is Phishing?</h2>
+      <p>
+        Phishing is a scam that uses deceptive messages or fake websites to trick people. Attackers often impersonate a trusted sender or brand to create a false sense of urgency or trust.
+      </p>
+      <div class="info-grid">
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">🎭</div>
+          <h3>Impersonation</h3>
+          <p>Attackers may pretend to be a familiar organization or a person you know. The message may look official, but it is not trustworthy.</p>
+        </article>
+
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">🔗</div>
+          <h3>Deceptive links</h3>
+          <p>Phishing messages may include links that lead to fake login pages or harmful websites designed to collect information or install malicious content.</p>
+        </article>
+
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">📎</div>
+          <h3>Suspicious attachments</h3>
+          <p>Unexpected attachments can contain harmful files or links. Opening them without checking can create risk.</p>
+        </article>
+      </div>
+
+      <div class="scenario">
+        <h3>Everyday example</h3>
+        <p class="scenario-message">A message says, “Your account is locked. Reset your password now.” The message includes a link that looks official, but it actually sends you to a fake website.</p>
+        <p>This is a classic phishing pattern: urgency, pressure, impersonation, and a malicious or deceptive link.</p>
+      </div>
+    </section>
+
+    <section id="email-phishing" class="lesson-panel" aria-labelledby="email-heading">
+      <h2 id="email-heading">Email Phishing</h2>
+      <p>
+        Email phishing is one of the most common forms of phishing. These messages often pretend to be account alerts, delivery notices, invoices, fake prizes, or urgent requests for action.
+      </p>
+
+      <div class="scenario">
+        <h3>Email inspection example</h3>
+        <div class="email-preview" aria-live="polite">
+          <div class="email-preview__header">
+            <span>From: security-update@account-support.example</span>
+            <span>Subject: Immediate action required</span>
+          </div>
+          <div class="email-preview__body">
+            <p><strong>Dear user,</strong></p>
+            <p>Your account will be disabled unless you confirm your access today.</p>
+            <p><a href="#" aria-label="Example phishing link">https://verify-account-now.example-login.xyz</a></p>
+            <p>Reply with your password and one-time code if you want to continue using the service.</p>
+          </div>
+        </div>
+
+        <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="email-warning-signs">
+          Reveal warning signs
+        </button>
+        <div id="email-warning-signs" class="triad-detail" hidden>
+          <p>Warning signs include a suspicious sender address, pressure to act quickly, a strange link, and a request for a password or verification code. A trustworthy service would not ask for these details through an unexpected email.</p>
+        </div>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">📬</div>
+          <h3>Check the sender</h3>
+          <p>Look closely at the email address. A real organization usually uses a consistent and recognizable domain.</p>
+        </article>
+
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">✍️</div>
+          <h3>Look at the wording</h3>
+          <p>Urgent, threatening, or overly dramatic wording is a common phishing warning sign.</p>
+        </article>
+
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">🧭</div>
+          <h3>Verify independently</h3>
+          <p>Use a trusted method, such as a bookmark or a known app, rather than clicking from the message itself.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sms-phishing" class="lesson-panel" aria-labelledby="sms-heading">
+      <h2 id="sms-heading">SMS Phishing / Smishing</h2>
+      <p>
+        Phishing is not limited to email. Messages sent by SMS, WhatsApp, Telegram, or similar apps can also be scams. These messages often ask for immediate action, encourage payment, or provide suspicious links.
+      </p>
+
+      <div class="scenario">
+        <h3>Example SMS</h3>
+        <div class="sms-preview" aria-live="polite">
+          <div class="sms-preview__bubble">
+            Your package has been delayed. Click now to confirm delivery: bit.ly/3x4m9k
+          </div>
+        </div>
+        <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="sms-warning-signs">
+          Identify the suspicious details
+        </button>
+        <div id="sms-warning-signs" class="triad-detail" hidden>
+          <p>Suspicious details include a shortened link, an urgent message about a delivery, and a request to act without verifying the sender or service.</p>
+        </div>
+      </div>
+
+      <ul class="warning-list">
+        <li>Unexpected messages from unknown numbers.</li>
+        <li>Shortened links or unfamiliar websites.</li>
+        <li>Requests for payment or verification codes.</li>
+        <li>Urgent fake delivery, account, or prize alerts.</li>
+        <li>Messages that ask you to reply or click before verifying the real source.</li>
+      </ul>
+    </section>
+
+    <section id="fake-websites" class="lesson-panel" aria-labelledby="fake-websites-heading">
+      <h2 id="fake-websites-heading">Fake Websites</h2>
+      <p>
+        Fake websites may imitate a legitimate login page or service. They are created to trick people into entering passwords, codes, or personal information. Even a professional-looking page can be unsafe.
+      </p>
+
+      <div class="info-grid">
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">🌐</div>
+          <h3>Check the website address</h3>
+          <p>Look closely at the address bar. Fake websites often use unexpected domain names, misspellings, or unfamiliar pages.</p>
+        </article>
+
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">🔖</div>
+          <h3>Use trusted bookmarks</h3>
+          <p>When possible, open a service through a known browser bookmark or a trusted app rather than a message link.</p>
+        </article>
+
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">🔐</div>
+          <h3>HTTPS is not enough by itself</h3>
+          <p>HTTPS helps protect the connection, but it does not prove the website is legitimate. A fake site can still use HTTPS.</p>
+        </article>
+      </div>
+
+      <div class="scenario">
+        <h3>Safe practice</h3>
+        <p class="scenario-message">If you receive a message telling you to log in, stop. Open the trusted service directly through a bookmark or known app, then check whether the alert is real.</p>
+      </div>
+    </section>
+
+    <section id="warning-signs" class="lesson-panel" aria-labelledby="warning-signs-heading">
+      <h2 id="warning-signs-heading">Common Warning Signs</h2>
+      <p>These are common signs that a message may be phishing. Look for one or more of these signals before you click, reply, or share information.</p>
+
+      <div class="info-grid">
+        <article class="triad-card triad-card--confidentiality">
+          <span class="card-label">Pressure</span>
+          <h3>Urgent or threatening</h3>
+          <p>Messages that say “act now” or “your account will be closed today” are often designed to create panic.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="warning-urgency">
+            Why this is risky
+          </button>
+          <div id="warning-urgency" class="triad-detail" hidden>
+            <p>Pressure can cause people to make rushed choices without checking the message first.</p>
+          </div>
+        </article>
+
+        <article class="triad-card triad-card--integrity">
+          <span class="card-label">Suspicious contact</span>
+          <h3>Unknown sender or strange address</h3>
+          <p>Unexpected senders, odd domains, or inconsistent names may indicate a scam.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="warning-sender">
+            Why this is risky
+          </button>
+          <div id="warning-sender" class="triad-detail" hidden>
+            <p>Attackers often create addresses that look close to real ones but are not trustworthy.</p>
+          </div>
+        </article>
+
+        <article class="triad-card triad-card--availability">
+          <span class="card-label">Requests</span>
+          <h3>Requests for sensitive data</h3>
+          <p>Any request for passwords, MFA codes, payment details, or personal information should be treated with caution.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="warning-data">
+            Why this is risky
+          </button>
+          <div id="warning-data" class="triad-detail" hidden>
+            <p>Legitimate organizations normally do not ask for passwords or verification codes through uncertain messages.</p>
+          </div>
+        </article>
+
+        <article class="triad-card triad-card--confidentiality">
+          <span class="card-label">Links</span>
+          <h3>Suspicious links</h3>
+          <p>Shortened links, odd domains, or unfamiliar URLs can send you somewhere dangerous.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="warning-link">
+            Why this is risky
+          </button>
+          <div id="warning-link" class="triad-detail" hidden>
+            <p>Malicious links may lead to fake login pages or harmful downloads.</p>
+          </div>
+        </article>
+
+        <article class="triad-card triad-card--integrity">
+          <span class="card-label">Attachments</span>
+          <h3>Unexpected attachment</h3>
+          <p>Opening a file from an unexpected message can expose a device to risk.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="warning-attachment">
+            Why this is risky
+          </button>
+          <div id="warning-attachment" class="triad-detail" hidden>
+            <p>Attachments can contain harmful content, even when the message appears convincing.</p>
+          </div>
+        </article>
+
+        <article class="triad-card triad-card--availability">
+          <span class="card-label">Offer</span>
+          <h3>“Too good to be true”</h3>
+          <p>Messages promising prizes, rewards, or quick money are often scams.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="warning-offer">
+            Why this is risky
+          </button>
+          <div id="warning-offer" class="triad-detail" hidden>
+            <p>Scammers use enticing offers to draw attention away from caution and encourage action.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="spot-the-phish" class="lesson-panel" aria-labelledby="spot-heading">
+      <h2 id="spot-heading">Spot-the-Phish Simulation</h2>
+      <p>Decide whether each message is Safe or Suspicious. Read the explanation after your choice to learn what to look for.</p>
+
+      <div class="quiz-question" data-scenario="1">
+        <h3>Scenario 1: “Your account has been locked. Click the link below to verify your password before midnight.”</h3>
+        <div class="answer-list">
+          <button type="button" class="choice-btn" data-correct="false">Safe</button>
+          <button type="button" class="choice-btn" data-correct="true">Suspicious</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-scenario="2">
+        <h3>Scenario 2: “Your package is delayed. To track it, use the official delivery website you already know and trust.”</h3>
+        <div class="answer-list">
+          <button type="button" class="choice-btn" data-correct="true">Safe</button>
+          <button type="button" class="choice-btn" data-correct="false">Suspicious</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-scenario="3">
+        <h3>Scenario 3: “Dear team, the office lunch schedule has been updated. Please check the shared notice in the usual portal.”</h3>
+        <div class="answer-list">
+          <button type="button" class="choice-btn" data-correct="true">Safe</button>
+          <button type="button" class="choice-btn" data-correct="false">Suspicious</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-scenario="4">
+        <h3>Scenario 4: “Please send your password or verification code so we can confirm your account.”</h3>
+        <div class="answer-list">
+          <button type="button" class="choice-btn" data-correct="false">Safe</button>
+          <button type="button" class="choice-btn" data-correct="true">Suspicious</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="what-to-do" class="lesson-panel" aria-labelledby="what-to-do-heading">
+      <h2 id="what-to-do-heading">What Should You Do?</h2>
+      <p>When you suspect a message or link is unsafe, follow a simple process.</p>
+
+      <div class="decision-flow" aria-label="Phishing response flow">
+        <div class="flow-step">STOP</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step">CHECK</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step">VERIFY</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step">REPORT</div>
+        <div class="flow-arrow" aria-hidden="true">↓</div>
+        <div class="flow-step">DELETE / IGNORE</div>
+      </div>
+
+      <ul class="warning-list">
+        <li>Stop before clicking links or opening attachments.</li>
+        <li>Check the sender, ask yourself if the message is expected, and look at the wording.</li>
+        <li>Verify unusual requests through a trusted channel, such as a known app or a direct website you already use.</li>
+        <li>Avoid replying to suspicious messages or sharing passwords, MFA codes, or personal data.</li>
+        <li>Report suspicious messages through the organization’s approved reporting process if needed.</li>
+        <li>Delete or ignore the message when it is clearly suspicious.</li>
+      </ul>
+    </section>
+
+    <section id="takeaways" class="lesson-panel" aria-labelledby="takeaways-heading">
+      <h2 id="takeaways-heading">Key Takeaways</h2>
+      <ul class="takeaways-list">
+        <li>Think before you click.</li>
+        <li>Unexpected messages deserve extra attention.</li>
+        <li>Never share passwords or verification codes through messages.</li>
+        <li>Check sender information, links, and wording.</li>
+        <li>Verify unusual requests independently.</li>
+        <li>When in doubt, stop, check, and verify.</li>
+      </ul>
+    </section>
+
+    <section id="knowledge-check" class="lesson-panel" aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading">Module Knowledge Check</h2>
+      <p>Select the best answer. You need at least 80% to pass Module 03.</p>
+
+      <div class="quiz-question" data-question="1" data-lock="false">
+        <h3>1. What is phishing?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">A safe website that helps users manage passwords.</button>
+          <button type="button" class="answer-btn" data-correct="true">A scam that tricks people into clicking links, opening attachments, or sharing information.</button>
+          <button type="button" class="answer-btn" data-correct="false">A browser update request from a trusted service.</button>
+          <button type="button" class="answer-btn" data-correct="false">A software setting that blocks suspicious messages.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="2" data-lock="false">
+        <h3>2. Which message is most likely phishing?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="true">A message with urgency, an unexpected link, and a request for a password or code.</button>
+          <button type="button" class="answer-btn" data-correct="false">A regular service message sent from a familiar website you already use.</button>
+          <button type="button" class="answer-btn" data-correct="false">A normal reminder from a trusted contact about a meeting.</button>
+          <button type="button" class="answer-btn" data-correct="false">A message delivered through a known bookmark or app.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="3" data-lock="false">
+        <h3>3. What is the safest action when a message asks for sensitive information?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">Reply immediately and send the details.</button>
+          <button type="button" class="answer-btn" data-correct="true">Stop, check the message, and verify through a trusted channel before acting.</button>
+          <button type="button" class="answer-btn" data-correct="false">Click the link to confirm it is safe.</button>
+          <button type="button" class="answer-btn" data-correct="false">Share the request with everyone in your contacts.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="4" data-lock="false">
+        <h3>4. Why is HTTPS not enough by itself to prove a website is legitimate?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">Because all websites are automatically trusted.</button>
+          <button type="button" class="answer-btn" data-correct="true">Because a fake website can still use HTTPS, and the address or source still matters.</button>
+          <button type="button" class="answer-btn" data-correct="false">Because HTTPS means the site never asks for information.</button>
+          <button type="button" class="answer-btn" data-correct="false">Because HTTPS only works on mobile devices.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="5" data-lock="false">
+        <h3>5. What should you do if you suspect a suspicious message?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">Open all links to check their behavior.</button>
+          <button type="button" class="answer-btn" data-correct="true">Stop, verify through a trusted method, and report or delete it if it is suspicious.</button>
+          <button type="button" class="answer-btn" data-correct="false">Reply to confirm whether the message is real.</button>
+          <button type="button" class="answer-btn" data-correct="false">Send your password to the sender to test the message.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div id="quiz-summary" class="quiz-summary" hidden></div>
+      <div class="quiz-actions">
+        <button id="retry-quiz" type="button" class="btn btn--secondary" hidden>Retry knowledge check</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      'use strict';
+
+      function getScorm() {
+        if (window.parent && window.parent.SCORM) {
+          return window.parent.SCORM;
+        }
+        return window.SCORM || null;
+      }
+
+      function getModuleCompleteHook() {
+        if (window.parent && window.parent.Course && typeof window.parent.Course.markModuleComplete === 'function') {
+          return window.parent.Course.markModuleComplete;
+        }
+        return null;
+      }
+
+      function bindExpandablePanels() {
+        var toggles = Array.prototype.slice.call(document.querySelectorAll('.triad-toggle'));
+        toggles.forEach(function (toggle) {
+          toggle.addEventListener('click', function () {
+            var panelId = toggle.getAttribute('aria-controls');
+            var panel = document.getElementById(panelId);
+            var expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', String(!expanded));
+            toggle.textContent = expanded ? 'Reveal warning signs' : 'Hide details';
+            if (panel) {
+              panel.hidden = expanded;
+            }
+          });
+        });
+      }
+
+      function bindPhishScenarios() {
+        var scenarioCards = Array.prototype.slice.call(document.querySelectorAll('.quiz-question[data-scenario]'));
+        scenarioCards.forEach(function (card) {
+          var buttons = card.querySelectorAll('.choice-btn');
+          var feedback = card.querySelector('.quiz-feedback');
+          buttons.forEach(function (button) {
+            button.addEventListener('click', function () {
+              var isCorrect = button.getAttribute('data-correct') === 'true';
+              buttons.forEach(function (item) {
+                item.disabled = true;
+                item.classList.remove('is-correct', 'is-wrong');
+                if (item.getAttribute('data-correct') === 'true') {
+                  item.classList.add('is-correct');
+                } else if (item === button) {
+                  item.classList.add('is-wrong');
+                }
+              });
+
+              feedback.classList.remove('is-correct', 'is-wrong');
+              feedback.classList.add(isCorrect ? 'is-correct' : 'is-wrong');
+              feedback.classList.add('is-visible');
+              feedback.textContent = isCorrect
+                ? 'Correct. The message contains warning signs such as urgency, pressure, suspicious links, or requests for sensitive information.'
+                : 'This is risky because it contains pressure, a suspicious request, or a deceptive action. Safer behavior is to stop and verify through a trusted method.';
+            });
+          });
+        });
+      }
+
+      var questionCards = Array.prototype.slice.call(document.querySelectorAll('.quiz-question[data-question]'));
+      var summaryBox = document.getElementById('quiz-summary');
+      var retryButton = document.getElementById('retry-quiz');
+      var totalQuestions = questionCards.length;
+      var answeredCount = 0;
+      var correctCount = 0;
+
+      function resetQuestion(card) {
+        var buttons = card.querySelectorAll('.answer-btn');
+        var feedback = card.querySelector('.quiz-feedback');
+        card.setAttribute('data-lock', 'false');
+        buttons.forEach(function (button) {
+          button.disabled = false;
+          button.classList.remove('is-correct', 'is-wrong');
+        });
+        if (feedback) {
+          feedback.classList.remove('is-visible', 'is-correct', 'is-wrong');
+          feedback.textContent = '';
+        }
+      }
+
+      function finishQuiz() {
+        var score = Math.round((correctCount / totalQuestions) * 100);
+        summaryBox.hidden = false;
+        summaryBox.className = 'quiz-summary';
+
+        if (score >= 80) {
+          summaryBox.classList.add('quiz-summary--pass');
+          summaryBox.innerHTML = '<h3>Excellent work!</h3><p>You scored ' + score + '%.</p><p>Module 03 is completed.</p>';
+          retryButton.hidden = true;
+
+          var moduleComplete = getModuleCompleteHook();
+          if (typeof moduleComplete === 'function') {
+            moduleComplete.call(window.parent.Course, 'module03');
+          }
+
+          var scorm = getScorm();
+          if (scorm && typeof scorm.setValue === 'function' && scorm.CMI) {
+            scorm.setValue(scorm.CMI.LESSON_STATUS, 'completed');
+            scorm.setValue(scorm.CMI.SUSPEND_DATA, JSON.stringify({ currentId: 'module03', statuses: { module03: 'completed' } }));
+            scorm.commit();
+          }
+        } else {
+          summaryBox.classList.add('quiz-summary--fail');
+          summaryBox.innerHTML = '<h3>Nice effort.</h3><p>You scored ' + score + '%.</p><p>You need at least 80% to pass Module 03. Please try again.</p>';
+          retryButton.hidden = false;
+        }
+      }
+
+      function resetQuiz() {
+        answeredCount = 0;
+        correctCount = 0;
+        summaryBox.hidden = true;
+        summaryBox.textContent = '';
+        retryButton.hidden = true;
+        questionCards.forEach(function (card) {
+          resetQuestion(card);
+        });
+      }
+
+      function bindQuestionCards() {
+        questionCards.forEach(function (card) {
+          if (card.dataset.bound === 'true') {
+            return;
+          }
+          card.dataset.bound = 'true';
+          card.querySelectorAll('.answer-btn').forEach(function (button) {
+            button.addEventListener('click', function () {
+              var isCorrect;
+              var feedback = card.querySelector('.quiz-feedback');
+              if (card.getAttribute('data-lock') === 'true') {
+                return;
+              }
+
+              isCorrect = button.getAttribute('data-correct') === 'true';
+              card.querySelectorAll('.answer-btn').forEach(function (item) {
+                item.disabled = true;
+                item.classList.remove('is-correct', 'is-wrong');
+                if (item.getAttribute('data-correct') === 'true') {
+                  item.classList.add('is-correct');
+                }
+              });
+
+              card.setAttribute('data-lock', 'true');
+
+              if (isCorrect) {
+                correctCount += 1;
+                feedback.classList.add('is-correct', 'is-visible');
+                feedback.textContent = 'Correct. That is the safest, most accurate answer.';
+              } else {
+                feedback.classList.add('is-wrong', 'is-visible');
+                feedback.textContent = 'Not quite. The best answer is the safer and more accurate choice based on the lesson.';
+              }
+
+              answeredCount += 1;
+              if (answeredCount === totalQuestions) {
+                finishQuiz();
+              }
+            });
+          });
+        });
+      }
+
+      bindExpandablePanels();
+      bindPhishScenarios();
+      bindQuestionCards();
+      retryButton.addEventListener('click', resetQuiz);
+    }());
+  </script>
+</body>
+</html>

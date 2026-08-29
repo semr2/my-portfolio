@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Module 02 — Password & Account Security</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <main class="module-lesson">
+    <header class="lesson-header">
+      <p class="eyebrow">Cyber Month Ethiopia</p>
+      <h1>02 — Password &amp; Account Security</h1>
+      <p class="lesson-lead">
+        Passwords protect your important online accounts. Safe password habits help keep email, banking, social media, work, and school accounts more secure.
+      </p>
+    </header>
+
+    <nav class="lesson-nav" aria-label="Module section navigation">
+      <a href="#welcome">Welcome</a>
+      <a href="#why-passwords">Why Passwords Matter</a>
+      <a href="#strong-passwords">Strong Passwords</a>
+      <a href="#password-reuse">Password Reuse</a>
+      <a href="#mfa">MFA</a>
+      <a href="#account-protection">Account Protection</a>
+      <a href="#protect-account">Protect the Account</a>
+      <a href="#quick-decisions">Quick Decisions</a>
+      <a href="#takeaways">Takeaways</a>
+      <a href="#knowledge-check">Knowledge Check</a>
+    </nav>
+
+    <section id="welcome" class="lesson-panel" aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading">Welcome</h2>
+      <p>
+        Many everyday activities depend on accounts: email, banking, social media, education, work systems, and online shopping. Passwords are one of the most important ways to protect those accounts.
+      </p>
+      <p>
+        Strong, thoughtful password habits reduce the chance of unauthorized access and help keep personal information safer.
+      </p>
+    </section>
+
+    <section id="why-passwords" class="lesson-panel" aria-labelledby="why-heading">
+      <h2 id="why-heading">Why Passwords Matter</h2>
+      <p>
+        A password is one layer of account protection. If it is weak, guessed, or reused, an attacker may gain access to more than one account.
+      </p>
+      <div class="info-grid">
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">🔒</div>
+          <h3>One layer of protection</h3>
+          <p>Passwords help protect accounts, but they work best when combined with good habits and additional safeguards such as MFA.</p>
+        </article>
+
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">⚠️</div>
+          <h3>Weak passwords increase risk</h3>
+          <p>Short or common passwords are easier to guess or brute-force. This can make personal data and online accounts more vulnerable.</p>
+        </article>
+
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">🔁</div>
+          <h3>Password reuse creates danger</h3>
+          <p>If one account is exposed, attackers may try the same password elsewhere. This can lead to multiple accounts being compromised.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="strong-passwords" class="lesson-panel" aria-labelledby="strong-heading">
+      <h2 id="strong-heading">Strong Passwords</h2>
+      <p>
+        A strong password is difficult to guess and not easy to predict. It should be specific to the account and should not rely on personal information.
+      </p>
+      <ul class="warning-list">
+        <li>Use long passwords or passphrases.</li>
+        <li>Use a different password for important accounts.</li>
+        <li>Avoid obvious information such as names, birthdays, pet names, or common phrases.</li>
+        <li>Avoid common patterns or very short passwords.</li>
+        <li>Consider using a reputable password manager to help manage unique passwords.</li>
+      </ul>
+
+      <div class="info-grid">
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">❌</div>
+          <h3>Weak</h3>
+          <p><code>password123</code></p>
+          <p>Easy to guess and common across many users.</p>
+        </article>
+
+        <article class="info-box">
+          <div class="card-icon" aria-hidden="true">✅</div>
+          <h3>Better</h3>
+          <p>Example: <code>River!Mango@Cloudy7Sun</code></p>
+          <p>Longer, unique, and not based on personal details.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="password-reuse" class="lesson-panel" aria-labelledby="reuse-heading">
+      <h2 id="reuse-heading">Password Reuse</h2>
+      <p>
+        Reusing the same password across multiple websites increases risk. If one website is compromised, the same password may be tested on other accounts.
+      </p>
+
+      <div class="scenario">
+        <h3>Example</h3>
+        <p class="scenario-message">One website compromised → Password exposed → Same password used elsewhere → Multiple accounts at risk</p>
+        <p>Using unique passwords limits the damage. Even if one account is exposed, the others remain better protected.</p>
+      </div>
+    </section>
+
+    <section id="mfa" class="lesson-panel" aria-labelledby="mfa-heading">
+      <h2 id="mfa-heading">Multi-Factor Authentication (MFA)</h2>
+      <p>
+        MFA adds another layer of protection beyond a password. Instead of relying on only one factor, the user must confirm their identity in another way.
+      </p>
+      <div class="cia-grid">
+        <article class="triad-card triad-card--confidentiality">
+          <span class="card-label">Something you know</span>
+          <h3>Password</h3>
+          <p>A secret you remember, such as a password or passphrase.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="mfa-knowledge-detail">
+            Show explanation
+          </button>
+          <div id="mfa-knowledge-detail" class="triad-detail" hidden>
+            <p>This is the first factor, but it can be stolen or guessed.</p>
+          </div>
+        </article>
+
+        <article class="triad-card triad-card--integrity">
+          <span class="card-label">Something you have</span>
+          <h3>Authenticator or device</h3>
+          <p>A phone, security key, or code generator used to confirm access.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="mfa-device-detail">
+            Show explanation
+          </button>
+          <div id="mfa-device-detail" class="triad-detail" hidden>
+            <p>This adds a second factor and makes unauthorized access harder.</p>
+          </div>
+        </article>
+
+        <article class="triad-card triad-card--availability">
+          <span class="card-label">Something you are</span>
+          <h3>Biometric check</h3>
+          <p>Such as a fingerprint or facial scan used on trusted devices.</p>
+          <button type="button" class="triad-toggle" aria-expanded="false" aria-controls="mfa-bio-detail">
+            Show explanation
+          </button>
+          <div id="mfa-bio-detail" class="triad-detail" hidden>
+            <p>Biometric checks can strengthen login security when supported by the device or service.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="account-protection" class="lesson-panel" aria-labelledby="account-heading">
+      <h2 id="account-heading">Account Protection</h2>
+      <p>These habits help reduce everyday account risk:</p>
+      <ul class="warning-list">
+        <li>Enable MFA when it is available.</li>
+        <li>Use unique passwords for important accounts.</li>
+        <li>Keep recovery information updated.</li>
+        <li>Review account security settings when you can.</li>
+        <li>Be careful with login alerts and notifications.</li>
+        <li>Do not share passwords or authentication codes.</li>
+        <li>Do not approve unexpected authentication requests.</li>
+        <li>Sign out of accounts on shared or public devices.</li>
+        <li>Keep devices and browsers updated.</li>
+      </ul>
+    </section>
+
+    <section id="protect-account" class="lesson-panel" aria-labelledby="protect-account-heading">
+      <h2 id="protect-account-heading">Protect the Account</h2>
+      <div class="scenario" aria-live="polite">
+        <h3>Simulation</h3>
+        <p class="scenario-message">Your account will be locked unless you verify your password immediately. Click this link and enter your password now.</p>
+        <p>What is the safest response?</p>
+
+        <div class="choice-list" role="group" aria-label="Choose the safest account-security response">
+          <button type="button" class="choice-btn" data-correct="false">A. Click the link and enter the password immediately.</button>
+          <button type="button" class="choice-btn" data-correct="false">B. Ignore the message completely without checking the account.</button>
+          <button type="button" class="choice-btn" data-correct="true">C. Do not use the link. Open the official service through a trusted method and check your account security notifications.</button>
+          <button type="button" class="choice-btn" data-correct="false">D. Forward the message to friends to ask whether they received it.</button>
+        </div>
+
+        <div id="protect-feedback" class="feedback-box" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <section id="quick-decisions" class="lesson-panel" aria-labelledby="quick-heading">
+      <h2 id="quick-heading">Quick Decision Activity</h2>
+
+      <div class="quiz-question" data-scenario="1">
+        <h3>Situation 1: You use the same password for email, social media, and an online shopping account.</h3>
+        <p>Is this a safe practice?</p>
+        <div class="answer-list">
+          <button type="button" class="decision-btn" data-correct="false">Yes, it is simpler to remember.</button>
+          <button type="button" class="decision-btn" data-correct="true">No, it is safer to use unique passwords.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-scenario="2">
+        <h3>Situation 2: Your email provider offers MFA, but you have not enabled it.</h3>
+        <p>What should you consider doing?</p>
+        <div class="answer-list">
+          <button type="button" class="decision-btn" data-correct="true">Enable MFA for that account.</button>
+          <button type="button" class="decision-btn" data-correct="false">Ignore it because a password is enough.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-scenario="3">
+        <h3>Situation 3: You receive an unexpected MFA approval request.</h3>
+        <p>What should you do?</p>
+        <div class="answer-list">
+          <button type="button" class="decision-btn" data-correct="false">Approve it immediately to avoid delays.</button>
+          <button type="button" class="decision-btn" data-correct="true">Do not approve it and investigate the account activity.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="takeaways" class="lesson-panel" aria-labelledby="takeaways-heading">
+      <h2 id="takeaways-heading">Key Takeaways</h2>
+      <ul class="takeaways-list">
+        <li>Use long, unique passwords or passphrases.</li>
+        <li>Avoid password reuse.</li>
+        <li>Consider a password manager.</li>
+        <li>Enable MFA whenever possible.</li>
+        <li>Never share passwords or authentication codes.</li>
+        <li>Be cautious with unexpected login or security messages.</li>
+        <li>Verify suspicious requests through trusted channels.</li>
+      </ul>
+    </section>
+
+    <section id="knowledge-check" class="lesson-panel" aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading">Module Knowledge Check</h2>
+      <p>Select the best answer. You need at least 80% to pass Module 02.</p>
+
+      <div class="quiz-question" data-question="1" data-lock="false">
+        <h3>1. Which password practice is safest?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="true">Use a long, unique password or passphrase for each important account.</button>
+          <button type="button" class="answer-btn" data-correct="false">Use the same password everywhere so it is easy to remember.</button>
+          <button type="button" class="answer-btn" data-correct="false">Use a short password with a birthday.</button>
+          <button type="button" class="answer-btn" data-correct="false">Share your password with a trusted friend.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="2" data-lock="false">
+        <h3>2. Why is password reuse risky?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">It makes every account easier to recover.</button>
+          <button type="button" class="answer-btn" data-correct="true">If one account is exposed, the same password can be used to access other accounts.</button>
+          <button type="button" class="answer-btn" data-correct="false">It is easier for a service to remember it.</button>
+          <button type="button" class="answer-btn" data-correct="false">It helps passwords stay secure over time.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="3" data-lock="false">
+        <h3>3. What does MFA provide?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">A second password that replaces the first.</button>
+          <button type="button" class="answer-btn" data-correct="true">An additional layer of verification beyond the password.</button>
+          <button type="button" class="answer-btn" data-correct="false">An automatic password reset.</button>
+          <button type="button" class="answer-btn" data-correct="false">A guarantee that no one can ever access the account.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="4" data-lock="false">
+        <h3>4. What should you do when you receive an unexpected account verification request?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">Click the link immediately to stop the warning.</button>
+          <button type="button" class="answer-btn" data-correct="true">Do not use the message link; verify the account through a trusted method.</button>
+          <button type="button" class="answer-btn" data-correct="false">Send your password to the sender to confirm it is real.</button>
+          <button type="button" class="answer-btn" data-correct="false">Forward it to others to confirm if they got it too.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div class="quiz-question" data-question="5" data-lock="false">
+        <h3>5. Which action best protects an important online account?</h3>
+        <div class="answer-list">
+          <button type="button" class="answer-btn" data-correct="false">Use a weak password because it is easy to manage.</button>
+          <button type="button" class="answer-btn" data-correct="true">Use a long unique password and enable MFA when available.</button>
+          <button type="button" class="answer-btn" data-correct="false">Share the password with a family member.</button>
+          <button type="button" class="answer-btn" data-correct="false">Ignore security alerts because they are usually false.</button>
+        </div>
+        <div class="quiz-feedback" aria-live="polite"></div>
+      </div>
+
+      <div id="quiz-summary" class="quiz-summary" hidden></div>
+      <div class="quiz-actions">
+        <button id="retry-quiz" type="button" class="btn btn--secondary" hidden>Retry knowledge check</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      'use strict';
+
+      function getScorm() {
+        if (window.parent && window.parent.SCORM) {
+          return window.parent.SCORM;
+        }
+        return window.SCORM || null;
+      }
+
+      function getModuleCompleteHook() {
+        if (window.parent && window.parent.Course && typeof window.parent.Course.markModuleComplete === 'function') {
+          return window.parent.Course.markModuleComplete;
+        }
+        return null;
+      }
+
+      function bindTriadInteractions() {
+        var toggles = Array.prototype.slice.call(document.querySelectorAll('.triad-toggle'));
+        toggles.forEach(function (toggle) {
+          toggle.addEventListener('click', function () {
+            var isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+            var panel = document.getElementById(toggle.getAttribute('aria-controls'));
+            toggle.setAttribute('aria-expanded', String(!isExpanded));
+            toggle.textContent = isExpanded ? 'Show explanation' : 'Hide explanation';
+            if (panel) {
+              panel.hidden = isExpanded;
+            }
+          });
+        });
+      }
+
+      function bindProtectSimulation() {
+        var feedback = document.getElementById('protect-feedback');
+        var buttons = Array.prototype.slice.call(document.querySelectorAll('.choice-btn'));
+        buttons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            var isCorrect = button.getAttribute('data-correct') === 'true';
+            buttons.forEach(function (item) {
+              item.disabled = true;
+              item.classList.remove('is-correct', 'is-wrong');
+              if (item.getAttribute('data-correct') === 'true') {
+                item.classList.add('is-correct');
+              }
+            });
+
+            if (isCorrect) {
+              feedback.hidden = false;
+              feedback.textContent = 'Correct. The safest action is to avoid the suspicious link, verify through the official account route, and check real security notifications.';
+            } else {
+              feedback.hidden = false;
+              feedback.textContent = 'This option is risky. Unexpected account warnings should be checked through a trusted account route, not by entering information into a message link.';
+            }
+          });
+        });
+      }
+
+      function bindDecisionActivities() {
+        var cards = Array.prototype.slice.call(document.querySelectorAll('.quiz-question[data-scenario]'));
+        cards.forEach(function (card) {
+          var buttons = card.querySelectorAll('.decision-btn');
+          var feedback = card.querySelector('.quiz-feedback');
+          buttons.forEach(function (button) {
+            button.addEventListener('click', function () {
+              var isCorrect = button.getAttribute('data-correct') === 'true';
+              buttons.forEach(function (item) {
+                item.disabled = true;
+                item.classList.remove('is-correct', 'is-wrong');
+                if (item.getAttribute('data-correct') === 'true') {
+                  item.classList.add('is-correct');
+                } else if (item === button) {
+                  item.classList.add('is-wrong');
+                }
+              });
+
+              feedback.classList.remove('is-correct', 'is-wrong');
+              feedback.classList.add(isCorrect ? 'is-correct' : 'is-wrong');
+              feedback.classList.add('is-visible');
+              feedback.textContent = isCorrect
+                ? 'Correct. That is a safer and more secure choice.'
+                : 'Not quite. The safer action is to protect the account with unique passwords, MFA, and careful verification.';
+            });
+          });
+        });
+      }
+
+      var questionCards = Array.prototype.slice.call(document.querySelectorAll('.quiz-question[data-question]'));
+      var summaryBox = document.getElementById('quiz-summary');
+      var retryButton = document.getElementById('retry-quiz');
+      var totalQuestions = questionCards.length;
+      var answeredCount = 0;
+      var correctCount = 0;
+
+      function resetQuestion(card) {
+        var buttons = card.querySelectorAll('.answer-btn');
+        var feedback = card.querySelector('.quiz-feedback');
+        card.setAttribute('data-lock', 'false');
+        buttons.forEach(function (button) {
+          button.disabled = false;
+          button.classList.remove('is-correct', 'is-wrong');
+        });
+        if (feedback) {
+          feedback.classList.remove('is-visible', 'is-correct', 'is-wrong');
+          feedback.textContent = '';
+        }
+      }
+
+      function finishQuiz() {
+        var score = Math.round((correctCount / totalQuestions) * 100);
+        summaryBox.hidden = false;
+        summaryBox.className = 'quiz-summary';
+
+        if (score >= 80) {
+          summaryBox.classList.add('quiz-summary--pass');
+          summaryBox.innerHTML = '<h3>Excellent work!</h3><p>You scored ' + score + '%.</p><p>You passed Module 02.</p>';
+          retryButton.hidden = true;
+
+          var moduleComplete = getModuleCompleteHook();
+          if (typeof moduleComplete === 'function') {
+            moduleComplete.call(window.parent.Course, 'module02');
+          }
+
+          var scorm = getScorm();
+          if (scorm && typeof scorm.setValue === 'function' && scorm.CMI) {
+            scorm.setValue(scorm.CMI.LESSON_STATUS, 'completed');
+            scorm.setValue(scorm.CMI.SUSPEND_DATA, JSON.stringify({ currentId: 'module02', statuses: { module02: 'completed' } }));
+            scorm.commit();
+          }
+        } else {
+          summaryBox.classList.add('quiz-summary--fail');
+          summaryBox.innerHTML = '<h3>Nice effort.</h3><p>You scored ' + score + '%.</p><p>You need at least 80% to pass Module 02. Please try again.</p>';
+          retryButton.hidden = false;
+        }
+      }
+
+      function resetQuiz() {
+        answeredCount = 0;
+        correctCount = 0;
+        summaryBox.hidden = true;
+        summaryBox.textContent = '';
+        retryButton.hidden = true;
+        questionCards.forEach(function (card) {
+          resetQuestion(card);
+        });
+      }
+
+      function bindQuestionCards() {
+        questionCards.forEach(function (card) {
+          if (card.dataset.bound === 'true') {
+            return;
+          }
+          card.dataset.bound = 'true';
+          card.querySelectorAll('.answer-btn').forEach(function (button) {
+            button.addEventListener('click', function () {
+              var isCorrect;
+              var feedback = card.querySelector('.quiz-feedback');
+              if (card.getAttribute('data-lock') === 'true') {
+                return;
+              }
+
+              isCorrect = button.getAttribute('data-correct') === 'true';
+              card.querySelectorAll('.answer-btn').forEach(function (item) {
+                item.disabled = true;
+                item.classList.remove('is-correct', 'is-wrong');
+                if (item.getAttribute('data-correct') === 'true') {
+                  item.classList.add('is-correct');
+                }
+              });
+
+              card.setAttribute('data-lock', 'true');
+
+              if (isCorrect) {
+                correctCount += 1;
+                feedback.classList.add('is-correct', 'is-visible');
+                feedback.textContent = 'Correct. ' + button.textContent.trim() + ' is the best answer.';
+              } else {
+                feedback.classList.add('is-wrong', 'is-visible');
+                feedback.textContent = 'Not quite. The best answer is the safe and accurate choice that matches the lesson.';
+              }
+
+              answeredCount += 1;
+              if (answeredCount === totalQuestions) {
+                finishQuiz();
+              }
+            });
+          });
+        });
+      }
+
+      bindTriadInteractions();
+      bindProtectSimulation();
+      bindDecisionActivities();
+      bindQuestionCards();
+      retryButton.addEventListener('click', resetQuiz);
+    }());
+  </script>
+</body>
+</html>
