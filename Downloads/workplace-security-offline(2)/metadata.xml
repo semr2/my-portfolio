@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="no" ?>
+<lom xmlns="http://ltsc.ieee.org/xsd/LOM">
+  <general>
+    <title>
+      <string language="en">Workplace Security</string>
+    </title>
+    <description>
+      <string language="en">Offline, self-contained workplace security awareness training covering phishing, password hygiene, physical security, data handling, and incident reporting. No external network calls are made by this package.</string>
+    </description>
+    <language>en</language>
+  </general>
+  <educational>
+    <typicalLearningTime>
+      <duration>PT20M</duration>
+    </typicalLearningTime>
+  </educational>
+</lom>
